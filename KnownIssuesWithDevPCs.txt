@@ -1,0 +1,10 @@
+1.- Sleep & hibernate are broken in windows 10 on both machines. System will go into sleep mode fine, but then come out with a BSOD.
+    Computer has been made to not sleep/hibernate on its own, and the option to do it manually has been removed from the start menu. 
+	-Likely Issue: Windows can't figure out the dual GPU config. (Intel integrated & Quadro), BSOD error was Video_Memory_Management_Internal
+	 or something similar.
+2.- Brightness controls (Fn+arrowup/down) do not work in windows, however the on battery and on charger brightness can be set in BIOS
+   (Press F2 at Dell POST screen).
+	-Likely Issue: Drivers...
+3.- 802.11 n wifi doesn't work reliably and cuts out every ~10 minutes. Wifi card has been forced to use 802.11 a/b/g to have reliability at a
+    sacrifice of speed.
+	-Likely Issue: Drivers... 
