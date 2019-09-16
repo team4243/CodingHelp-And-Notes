@@ -1,0 +1,29 @@
+A quick startup guide for getting vscode and git at home. 
+
+1. Get Visual Studio Code
+	-Go to https://github.com/wpilibsuite/allwpilib/releases
+	-Download, unzip, and run WPILibInstaller_Windows64-2019.4.1.zip (or the one appropriate for your non windows pc)
+	-Select the download Vscode option in the installer, and check in all the FRC stuff it wants to add. 
+
+2. Motor controller and sensor dependencies
+	-Go to vendor website (ex: http://www.ctr-electronics.com/talon-srx.html#product_tabs_technical_resources)
+	-Download their firmware/drivers/ whatever they call it from the software/tech resources tab for the product
+	-Follow their instructions for pointing to the include files (*.h) within vscode. CTRE has FRC specific instructions for talon,
+	 with some vendors you kinda gotta figure it out. 
+
+3. Get and setup Git
+	- Go to https://git-scm.com/  and get the latest version for your OS.
+	- Run the installer and keep all the options default (Git is good at picking the best options for your OS)
+	- When installed right click on an empty portion of the desktop and select "Git Bash Here"
+	- In the bash terminal, type and enter the following commands:
+		$ git config --global user.name "Your full name camel cased in quotes, ex: AndrewPennington"
+		$ git config --global user.email yourpersonalemail@aol.com
+		$ ssh-keygen -t rsa -b 4096 -C "yourpersonalemail@aol.com"
+			- Press enter several times to skip file location and passphrase creation
+		$ eval $(ssh-agent -s)
+		$ ssh-add ~/.ssh/id_rsa
+	- log into github on the team account, go to settings, and then goto "SSH and GPG keys"
+	- Add a new SSh key from the ~/.ssh/id_rsa file (C:\Users\"yourusername"\ssh\id_rsa in windows) and name it Yourfullname's computer
+	- Your box can now push and pull to github! Consult prior knowledge and documentation on Git in order to use further commands within Git Bash.
+
+ 
